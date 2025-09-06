@@ -6,7 +6,17 @@ import "swiper/css/navigation";
 
 function App() {
   return (
-    <div style={{ width: "800px", margin: "50px auto" }}>
+    <div 
+      style={{ 
+        width: "850px", 
+        margin: "50px auto", 
+        padding: "20px",
+        border: "3px solid #333",       
+        borderRadius: "15px",           
+        boxShadow: "0 4px 10px rgba(0,0,0,0.2)", 
+        backgroundColor: "#fff"         
+      }}
+    >
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Clothes Slider</h2>
       
       <Swiper
@@ -17,35 +27,19 @@ function App() {
         modules={[Navigation, Autoplay]}
       >
         <SwiperSlide>
-          <img 
-            src="\photo14.jpg"
-            alt="dress" 
-            style={{ width: "100%", borderRadius: "10px" }} 
-          />
+          <img src="\photo14.jpg" alt="Dress" style={{ width: "100%", borderRadius: "10px" }} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img 
-            src="\photo38.jpg" 
-            alt="Dress" 
-            style={{ width: "100%", borderRadius: "10px" }} 
-          />
+          <img src="\photo18.jpg" alt="Dress" style={{ width: "100%", borderRadius: "10px" }} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img 
-            src="\photo18.jpg" 
-            alt="long dress" 
-            style={{ width: "100%", borderRadius: "10px" }} 
-          />
+          <img src="\photo25.jpg" alt="Dress" style={{ width: "100%", borderRadius: "10px" }} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img 
-            src="\photo25.jpg" 
-            alt="short dress" 
-            style={{ width: "100%", borderRadius: "10px" }} 
-          />
+          <img src="\photo38.jpg" alt="Dress" style={{ width: "100%", borderRadius: "10px" }} />
         </SwiperSlide>
       </Swiper>
     </div>
